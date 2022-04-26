@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --clr-Background-color:hsl(0, 0%, 90%);
+    --clr-text-color:hsl(221, 51%, 16%);
+    --clr-Result-color:hsl(32, 100%, 49%);
+    --clr-font-main:'Cardo', serif;
+}
+
+
+body{
+   font-family:var(--clr-font-main);
+   background-color: var(--clr-Background-color);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.game{
+    width: 50%;
+    margin: auto;
+    color: var(--clr-text-color);
+}
+
+.header .game_title{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+}
+
+.Weapons img{
+    width: 4.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.Weapons #rock:active{
+    width: 4.5rem;
+    padding: 0.2rem;
+}
+
+.Weapons #paper:active{
+    width: 4.5rem;
+    padding: 0.2rem;
+}
+
+.Weapons #scissor:active{
+    width: 4.5rem;
+    padding: 0.2rem;
+}
+
+.Weapons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.game_score{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.game_score span{
+    font-size: 2rem;
+    color: var(--clr-Result-color);
+}
+
+.result{
+    visibility: hidden;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.result.show{
+    visibility: visible;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#my_option,#computer_option{
+    color: var(--clr-Result-color);
+}
+
+#final_result{
+    font-size: 2.5rem;
+    color: var(--clr-Result-color);
+}
