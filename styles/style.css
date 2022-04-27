@@ -29,7 +29,7 @@ img{
 }
 
 .game{
-    width: 50%;
+    width: 80%;
     margin: auto;
     color: var(--clr-text-color);
 }
@@ -39,44 +39,44 @@ img{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap:1.5rem;
+    gap: 10px;
 }
 
-.Weapons img{
+.weapons img{
     width: 4.5rem;
-    margin-top: 2rem;
-    cursor: pointer;
+    margin-top: 3rem;
+    cursor: pointer;  
 }
 
-.Weapons #rock:active{
-    width: 4.5rem;
-    padding: 0.2rem;
+.weapons #rock:active{
+    width: 4.7rem;
 }
 
-.Weapons #paper:active{
-    width: 4.5rem;
-    padding: 0.2rem;
+.weapons #paper:active{
+    width: 4.7rem;
 }
 
-.Weapons #scissor:active{
-    width: 4.5rem;
-    padding: 0.2rem;
+.weapons #scissor:active{
+    width: 4.7rem;
 }
 
-.Weapons{
+.weapons{
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
-.game_score{
+
+.game_score {
     margin-top: 2rem;
     font-size: 1rem;
+    text-align: left;
 }
 
 .game_score span{
     font-size: 2rem;
     color: var(--clr-Result-color);
+    
 }
 
 .result{
@@ -85,6 +85,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-align: left;
 }
 
 .result.show{
@@ -93,13 +94,113 @@ img{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+      text-align: left;
 }
 
 #my_option,#computer_option{
     color: var(--clr-Result-color);
 }
 
-#final_result{
+#result{
     font-size: 2.5rem;
     color: var(--clr-Result-color);
+}
+
+@media screen and (min-width:768px){
+
+    .header .game_title{
+        font-size: 2.5rem;
+        gap: 2rem;
+    }
+
+    .weapons img{
+      width: 9rem;
+      margin-top: 5rem;
+    }
+
+    .weapons #rock:active{
+    width: 9.2rem;
+  
+}
+
+.weapons #paper:active{
+    width: 9.2rem;
+}
+
+.weapons #scissor:active{
+    width: 9.2rem;
+}
+
+    .weapons{
+        gap: 5rem;
+    }
+
+    .game_score{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .game_score span{
+        font-size: 3rem;
+    }
+
+    .result{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .result span{
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (min-width:1024px){
+
+    .game{
+        width: 90%;
+    }
+
+    .weapons img{
+        width: 12rem;
+    }
+
+    .game_body{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    }
+
+    .weapons #rock:active{
+    width: 12.2rem; 
+}
+
+    .weapons #paper:active{
+    width:12.2rem;
+}
+
+    .weapons #scissor:active{
+    width: 12.2rem;
+}
+}
+
+@media screen and (min-width:1440px){
+
+    .game_body{
+        justify-content: center;
+    }
+
+
+        .weapons #rock:active{
+    width: 12.2rem; 
+}
+
+    .weapons #paper:active{
+    width:12.2rem;
+}
+
+    .weapons #scissor:active{
+    width: 12.2rem;
+
 }
