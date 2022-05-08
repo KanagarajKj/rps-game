@@ -45,19 +45,26 @@ img{
 .weapons img{
     width: 4.5rem;
     margin-top: 3rem;
-    cursor: pointer;  
+    cursor: pointer;
+    transition: 0.05s ease;  
 }
 
 .weapons #rock:active{
-    width: 4.7rem;
+    width: 4.2rem;
+    transform: translateY(-5px);
+    transition: 0.05s ease-out;
 }
 
 .weapons #paper:active{
-    width: 4.7rem;
+    width: 4.2rem;
+    transform: translateY(-5px);
+    transition: 0.05s ease-out;
 }
 
 .weapons #scissor:active{
-    width: 4.7rem;
+    width: 4.2rem;
+    transform: translateY(-5px);
+    transition: 0.05s ease-out;
 }
 
 .weapons{
@@ -119,16 +126,16 @@ img{
     }
 
     .weapons #rock:active{
-    width: 9.2rem;
+    width: 8.8rem;
   
 }
 
 .weapons #paper:active{
-    width: 9.2rem;
+    width: 8.8rem;
 }
 
 .weapons #scissor:active{
-    width: 9.2rem;
+    width: 8.8rem;
 }
 
     .weapons{
@@ -173,15 +180,15 @@ img{
     }
 
     .weapons #rock:active{
-    width: 12.2rem; 
+    width: 11.8rem; 
 }
 
     .weapons #paper:active{
-    width:12.2rem;
+    width:11.8rem;
 }
 
     .weapons #scissor:active{
-    width: 12.2rem;
+    width: 11.8rem;
 }
 }
 
@@ -193,14 +200,14 @@ img{
 
 
         .weapons #rock:active{
-    width: 12.2rem; 
+    width: 11.8rem; 
 }
 
     .weapons #paper:active{
-    width:12.2rem;
+    width:11.8rem;
 }
-
+    
     .weapons #scissor:active{
-    width: 12.2rem;
-
+    width: 11.8rem;
+    }
 }

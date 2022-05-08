@@ -37,8 +37,8 @@ const showResult = function(userWeapon, computerWeapon) {
      myScore += 1;
      myScoreEl.textContent = myScore;
      showResult(userWeapon, computerWeapon);
-     resultEl.textcontent ='You Win !';
-   } else if (result === 'You lose') {
+     resultEl.textcontent == 'You Win !';
+   } else if (result === 'You lose'){
      computerScore += 1;
      compterScoreEl.textContent = computerScore;
      showResult(userWeapon, computerWeapon);
